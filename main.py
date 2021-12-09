@@ -355,7 +355,7 @@ def only_yahoo_emails(emails_list):
     for email in emails_list:
         splited_on_a = email.split('@')
         for font in splited_on_a:
-            if font[0:5] == 'yahoo':
+            if font[0:5] == 'yahoo' or font[0:5] == 'YAHOO':
                 result.append(email)
     result = set(result)
     return result
@@ -367,7 +367,7 @@ def only_hotmail_emails(emails_list):
     for email in emails_list:
         splited_on_a = email.split('@')
         for font in splited_on_a:
-            if font[0:7] == 'hotmail':
+            if font[0:7] == 'hotmail' or font[0:7] == 'HOTMAIL':
                 result.append(email)
     result = set(result)
     return result
@@ -379,7 +379,7 @@ def only_br_emails(emails_list):
     for email in emails_list:
         splited_on_a = email.split('@')
         for final in splited_on_a:
-            if final[-2:] == 'br':
+            if final[-2:] == 'br' or final[-2:] == 'BR':
                 result.append(email)
     result = set(result)
     return result

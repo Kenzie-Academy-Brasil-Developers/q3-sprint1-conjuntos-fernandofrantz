@@ -19,7 +19,7 @@ from .util import (
 )
 
 
-def test_spanish_and_brazilian_fruits():
+def test_spanish_and_brazilian():
     result = spanish_and_brazilian_fruits(spanish_fruits, brazilian_fruits)
     expected = ex1
     assert (
@@ -27,7 +27,7 @@ def test_spanish_and_brazilian_fruits():
     ), "A função não está retornando o conjunto das frutas brasileiras e espanholas"
 
 
-def test_spanish_and_japan_fruits():
+def test_spanish_and_japan():
     result = spanish_and_japan_fruits(spanish_fruits, japonese_fruits)
     expected = ex2
     assert (
@@ -35,7 +35,7 @@ def test_spanish_and_japan_fruits():
     ), "A função não está retornando o conjunto das frutas japonesas e espanholas"
 
 
-def test_brazilian_and_japan_fruits():
+def test_brazilian_and_japan():
     result = brazilian_and_japan_fruits(brazilian_fruits, japonese_fruits)
     expected = ex3
     assert (
@@ -43,7 +43,7 @@ def test_brazilian_and_japan_fruits():
     ), "A função não está retornando o conjunto das frutas japonesas e brasileiras"
 
 
-def test_popular_spanish_or_brazilian_fruits():
+def test_popular_spanish_or_brazilian():
     result = popular_spanish_or_brazilian_fruits(
         popular_fruits, spanish_fruits, brazilian_fruits
     )
@@ -53,7 +53,7 @@ def test_popular_spanish_or_brazilian_fruits():
     ), "A função não está retornando as frutas espanholas ou brasileiras mais populares"
 
 
-def test_popular_only_spanish_fruits():
+def test_popular_only_spanish():
     result = popular_only_spanish_fruits(
         popular_fruits, spanish_fruits, japonese_fruits, brazilian_fruits
     )
